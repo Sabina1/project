@@ -1,0 +1,197 @@
+<html>
+<head>
+<style>
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+footer table td{
+  padding: 5px 20px;
+  font-size: 80%;
+}
+
+footer .reklama{
+  text-align: right;
+  font-size: 110%;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+header .head{
+  border: 1px;
+  background-color: #2F4F4F;
+  color: white;
+  font-size: 90%;
+  padding: 2px 20px;
+}
+
+header .start a {
+  text-decoration: none;
+  font-size: 130%;
+  color: #2F4F4F;
+  padding: 40px;
+}
+
+
+header .start {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+header .razdel{
+  border: 1px solid #DCDCDC;
+  background-color: #efefef;
+  margin: 20px 0px 20px -20px;
+}
+header .razdel a{
+  margin-left: 25px;
+  padding: 0px 10px;
+  text-decoration: none;
+  color: dimgrey;
+}
+
+header .start a:hover ,header .razdel a:hover{
+    color: maroon;
+    text-decoration: underline;
+}
+
+header form, input{
+  display: inline-block;
+  padding-left: 15px;
+}
+.main_body h1{
+  text-align: center;
+}
+
+
+.photo{
+  position: relative;
+  display: inline-block;
+  margin: 10px 25px;
+}
+
+.brand{
+  background-color: #659178;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  font-size: 120%;
+  left: 0;
+  top: 0;
+  padding: 15px;
+}
+
+.brand:hover{
+  background-color: #2e4437;
+}
+
+.icon {
+  position: absolute;
+  right: 12px;
+	top: 80px;
+  padding: 3px;
+}
+.like{
+  position: absolute;
+  right: 0;
+	top: 0;
+}
+
+.foto_part{
+  display: inline-block;
+  padding-left: 80px;}
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <div> Ваш регион доставки: город Алматы </div>
+  </div>
+  <div class = "start">
+    <a href="">Женщинам</a>
+    <a href="">Мужчинам</a>
+    <a href="">Детям</a>
+    <img src="logo.png"/>
+    <a href="">Войти</a>
+    <a href="">Корзина</a>
+  </div>
+
+  <div class = "razdel">
+    <a href="">Осень 2017</a>
+    <a href="">Одежда</a>
+    <a href="">Обувь</a>
+    <a href="">Аксессуары</a>
+    <a href="">Бренды</a>
+    <a href="">Премиум</a>
+    <a href="">Спорт</a>
+    <a href="">Красота</a>
+    <a href="">Распродажа %</a>
+    <form method="get" action="/search" target="_blank">
+    <input name="q" id="form-query" value="" placeholder="поиск ">
+    <input src="http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png" type="image" style="vertical-align: bottom; padding: 0;"/></form>
+  </div>
+</header>
+
+<selection class="main_body">
+  <div class="foto_part">
+    <div class="photo" price="25000 tng"><a href="#"><img src="/home/sabi/Desktop/project/suggest/2.jpg"/></a>
+      <div class="brand">Brand</div>
+      <a href="#"><img width="40px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      <img width="80px" class="like" src ="like.gif">
+    </div>
+  </div>
+</selection>
+
+<footer>
+  <table>
+  <tr><td><div>@2006-2017 ТОО "ЛаМода"</div></td>
+      <td><a href="#">О сайте,  </a><a href="#"> газете </a></td>
+      <td><div>Следите за нашими новостями </div></td>
+      <td><a href="#">Мобильные приожения </a><a href="#"> Мобильная весия сайта </a></td>
+  </tr>
+
+  <tr><td><a href="#" class='active'>Пользовательское соглашение </a></td>
+      <td><a href="#">Написать письмо</a><a href="#">Карта сайта </a></td>
+      <td>......</td>
+  </tr>
+
+  <tr><td><a href="#">Правила размещения объявений </a></td>
+      <td><a href="#">Работа в "Колеса Крыша Маркет" </a></td>
+      <td>.......</td>
+      <td>......</td>
+  </tr>
+</table>
+
+  <div class="reklama">Рекломедателям  <a href="#"> посвящается</a> </div>
+</footer>
+</body>

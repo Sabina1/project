@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+  width:250px;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+</style>
+</head>
+<body>
+  <div id="cf">
+    <img class="bottom" src="kid.jpg" />
+    <img class="top" src="man.jpg" />
+  </div>
+</body>
+</html>

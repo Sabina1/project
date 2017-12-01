@@ -1,0 +1,326 @@
+<html>
+<head>
+<style>
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  position: absolute;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+footer table td{
+  padding: 5px 20px;
+  font-size: 80%;
+}
+
+footer .reklama{
+  font-size: 110%;
+  margin-left: 20px;
+}
+header .for_city{
+  border: 1px;
+  background-color: #2F4F4F;
+  color: white;
+  font-size: 90%;
+  padding: 2px 20px;
+}
+
+select{
+  background-color: #2F4F4F;
+  color: #cc7712;
+  font-weight: bold;
+}
+
+header .start a {
+  text-decoration: none;
+  font-size: 130%;
+  color: #2F4F4F;
+  padding: 40px;
+}
+
+
+header .start {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+header .navbar{
+  border: 1px solid #DCDCDC;
+  background-color: #efefef;
+  margin: 20px 0px 20px -20px;
+  width: 101.6%;
+  overflow: hidden;
+}
+header .navbar a{
+  margin-left: 25px;
+  padding: 0px 8px;
+  text-decoration: none;
+  color: dimgrey;
+}
+
+header .start a:hover ,header .navbar a:hover{
+    color: maroon;
+    text-decoration: underline;
+}
+
+header form, input{
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.main_body h1{
+  text-align: center;
+  color: slategrey;
+}
+
+.card{
+  position: relative;
+  display: inline-block;
+  margin: 12px;
+}
+
+.title{
+  background-color: #659178;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  font-size: 120%;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+}
+
+.title:hover{
+  background-color: #2e4437;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+	bottom: 0;
+  padding: 3px;
+}
+
+.foto_part{
+  display: inline-block;
+  padding-left: 80px;
+}
+
+.for_table table{
+  width: 95%;
+  margin-left: 15px;
+  text-align: center;
+  color: #444747;
+}
+.for_table table td{
+  padding: 10px;
+}
+.for_suggest{
+  margin-left: 30px;
+  color: #cc7712;
+  margin-bottom: 30px;
+}
+
+.for_suggest a img{
+  cursor: pointer;
+  max-width: 150px;
+}
+
+.for_suggest a img:hover{
+  max-width: 160px;
+}
+
+.for_suggest2{
+  color: #cc7712;
+  margin-bottom: 10px;
+  margin-left: 2%;
+}
+
+.for_suggest2 a img{
+  width: 10%;
+  padding: 2%;
+  margin-bottom: 15px;
+}
+
+.for_suggest .photo{
+  display: inline-block;
+  position: relative;
+}
+
+.for_suggest .photo:hover::after{
+  content: attr(data-title);
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 1;
+  background: rgba(255,127,80,0.6);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+}
+
+.create_page{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+</style>
+</head>
+<body>
+<a class ="create_page" href="create_page.html"><img width="60px" src="plus.png"/></a>
+<header>
+  <div class="for_city">
+    <div> Ваш регион доставки: город <select>
+    	<option>Алматы</option>
+    	<option>Астана</option>
+    	<option disabled>Шымкент</option>
+    	<option disabled>Караганда</option>
+      </select></div>
+  </div>
+  <div class = "start">
+    <a href="list_page.html">Женщинам</a>
+    <a href="">Мужчинам</a>
+    <a href="">Детям</a>
+    <img height="100px" width="170px" src="logo.png"/>
+    <a href="log_in.html">Войти</a>
+    <a href="">Корзина</a>
+  </div>
+
+  <div class = "navbar">
+    <a href="news.php">Осень 2017</a>
+    <a href="">Одежда</a>
+    <a href="">Обувь</a>
+    <a href="">Аксессуары</a>
+    <a href="">Бренды</a>
+    <a href="">Премиум</a>
+    <a href="">Спорт</a>
+    <a href="">Красота</a>
+    <a color="red" href="">Распродажа %</a>
+    <form method="get" action="/search" target="_blank">
+    <input name="q" id="form-query" value="" placeholder="поиск ">
+    <input src="http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png" type="image" style="vertical-align: bottom; padding: 0;"/></form>
+  </div>
+</header>
+
+<section class="main_body">
+  <div class="foto_part">
+  <h1> Выберите интересующий вас раздел </h1>
+  <div class="card">
+    <a href="list_page.html"><img width="350px" src="woman.jpg"/></a>
+    <div class="title">Женщины</div>
+    <a href="#"><img width="40px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+  </div>
+  <div class="card">
+    <img width="350px" src="man.jpg"/>
+    <div class="title">Мужчины</div>
+    <a href="#"><img width="40px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+  </div>
+  <div class="card">
+    <img width="350px" src="kid.jpg"/>
+    <div class="title">Дети</div>
+    <a href="#"><img width="40px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+  </div>
+</div>
+
+<div class="for_table">
+  <table>
+    <tr><td><img width="70px" src="delivery.png"/></td>
+      <td><img width="50px" src="hanger.png"/></td>
+      <td><img width="40px" src="purse.png"/></td></tr>
+    <tr><td><h4>Экспресс-доставка</h4></td>
+      <td><h4>Примерка одежды перед покупкой</h4></td>
+      <td><h4>Удобные способы оплаты</h4></td></tr>
+    <tr><td>Бесплатная экспресс-доставка осуществляется по всему Казахстану методом Lamoda Эконом или при выкупе товаров на сумму более 7500 тенге (для всех видов доставки, кроме Lamoda Супер Экспресс). Lamoda Супер Экспресс обеспечивает платную доставку на следующий день в Астане и Алматы.</td>
+      <td>Интернет-магазин Lamoda даёт возможность примерить одежду и обувь перед оплатой заказа. Оплачивайте только то, что вам подошло и понравилось. Также у вас всегда есть целый год на то, что бы вернуть неподошедший товар почтой или курьеру при получении следующего заказа.</td>
+      <td>Вы можете оплатить покупки не только наличными, но и банковской картой. У всех торговых представителей Lamoda Экспресс при себе есть мобильный терминал для оплаты картами. При оплате заказа на сайте банковской картой доставка любой службой бесплатна.</td></tr>
+  </table>
+</div>
+
+<div class="for_suggest">
+  <h3>Горячие предложения</h3>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/2.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/4.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/5.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/6.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/7.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/8.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/9.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/2.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/4.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/5.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/6.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/7.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/8.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/9.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/2.jpg"/></a></div>
+  <div class="photo" data-title="25000 tng"><a href="#"><img src="suggest/4.jpg"/></a>
+</div>
+
+<div class="for_suggest2">
+  <h4>Выбор одежды по бренду</h4>
+  <a href="#"><img src="brend/mango.jpg"/></a>
+  <a href="#"><img src="brend/adidas.png"/></a>
+  <a href="#"><img src="brend/asics.png"/></a>
+  <a href="#"><img src="brend/gap.png"/></a>
+  <a href="#"><img src="brend/tommy.png"/></a>
+  <a href="#"><img src="brend/nike.png"/></a>
+  <a href="#"><img src="brend/gap.png"/></a>
+
+</div>
+
+
+
+</section>
+
+<footer>
+  <table>
+  <tr><td><div>@2006-2017 ТОО "ЛаМода"</div></td>
+      <td><a href="#">О сайте,  </a><a href="#"> газете </a></td>
+      <td><div>Следите за нашими новостями </div></td>
+      <td><a href="#">Мобильные приожения </a><a href="#"> Мобильная весия сайта </a></td>
+  </tr>
+
+  <tr><td><a href="#" class='active'>Пользовательское соглашение </a></td>
+      <td><a href="#">Написать письмо</a><a href="#">Карта сайта </a></td>
+      <td>......</td>
+  </tr>
+
+  <tr><td><a href="#">Правила размещения объявений </a></td>
+      <td><a href="#">Работа в "Колеса Крыша Маркет" </a></td>
+      <td>.......</td>
+      <td><div class="reklama">Рекломедателям  <a href="#"> посвящается</a> </div></td>
+  </tr>
+</table>
+
+</footer>
+</body>
+</html>
